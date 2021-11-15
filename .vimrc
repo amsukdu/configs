@@ -15,11 +15,13 @@ set scrolloff=12
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-#git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+"git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+":PluginInstall
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'dart-lang/dart-vim-plugin'
 call vundle#end()            " required
 filetype plugin indent on    " required
 

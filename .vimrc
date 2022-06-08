@@ -15,6 +15,13 @@ set scrolloff=12
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[1 q"
+
+set hlsearch
+"This unsets the "last search pattern" register by hitting return
+nnoremap <CR> :noh<CR><CR>
+
 "git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ":PluginInstall
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -35,3 +42,4 @@ inoremap <C-k> <Esc>:m .-2<CR>==gi
 vnoremap <C-k> :m '<-2<CR>gv=gv
 
 nmap <C-n> :NERDTreeToggle<CR>
+let NERDTreeWinSize = 60

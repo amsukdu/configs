@@ -1,7 +1,6 @@
 #!/bin/bash
 
-alias fc="flutter run -d chrome --web-port 8080 --dart-define=DEFINE_APP_SUFFIX=.dev"
-alias fws="flutter run -d web-server --web-port 8080 --web-hostname 0.0.0.0 --dart-define=DEFINE_APP_SUFFIX=.dev"
+alias tlpn="sudo lsof -iTCP -sTCP:LISTEN -n -P"
 
 function GACP() {
     git add .
@@ -63,8 +62,4 @@ bindkey -s '^o' 'lfcd\n'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-
 

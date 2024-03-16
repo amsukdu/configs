@@ -1,13 +1,9 @@
-#!/bin/bash
+# append this to .zshrc
 #https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
+#https://sandeep.ramgolam.com/blog/lf
 
 alias tlpn="sudo lsof -iTCP -sTCP:LISTEN -n -P"
 
-function GACP() {
-    git add .
-    git commit -a -m "$1"
-    git push
-}
 
 # Basic auto/tab complete:
 autoload -U compinit
@@ -61,6 +57,4 @@ lfcd () {
 }
 bindkey -s '^o' 'lfcd\n'
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 

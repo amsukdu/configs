@@ -22,7 +22,9 @@ set hlsearch
 "This unsets the "last search pattern" register by hitting return
 nnoremap <CR> :noh<CR><CR>
 
+" DO THIS
 "git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+"in vim
 ":PluginInstall
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
